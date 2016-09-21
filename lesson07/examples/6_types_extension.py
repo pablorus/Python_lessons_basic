@@ -9,7 +9,7 @@ class my_dict(dict):
     def new_method(self):
         return "I'm new_method"
 
-    # Добавляем дополнительный функционал с существующему методу
+    # Добавляем дополнительный функционал к существующему методу
     def __setitem__(self, key, value):
         print('Setting %r to %r' % (key, value))
         return super().__setitem__(key, value)
@@ -31,7 +31,7 @@ print("\n***Demo MyList****")
 
 class MyList(list):
     """
-    Список - индексы которого начинатся с 1, а не с 0
+    Список, индексы которого начинатся с 1, а не с 0
     """
     def __getitem__(self, offset):
         print('(indexing % s at % s)' % (self, offset))

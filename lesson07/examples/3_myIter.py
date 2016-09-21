@@ -5,7 +5,7 @@
 
 class IterObj:
     """
-    Объект итератор
+    Объект-итератор
     """
     def __init__(self, start=0):
         self.i = start
@@ -21,7 +21,7 @@ class IterObj:
 
 class Iter:
     """
-    Объект поддерживающий интерфейс итерации
+    Объект, поддерживающий интерфейс итерации
     """
     def __init__(self, start=0):
         self.start = start - 1
@@ -47,7 +47,7 @@ map_iter = map(int, '123')
 print('next(map_iter) --> ', next(map_iter))
 print('next(map_iter) --> ', next(map_iter))
 
-# Цикл for in продолжает перебор элементов, т.к. map_iter является итератором
+# Цикл for..in продолжает перебор элементов, т.к. map_iter является итератором
 for el in map_iter:
     print("el in for in -->", el)
 
@@ -57,7 +57,7 @@ class Iter2:
         self.i = start
 
     def __iter__(self):
-        # Метод __iter__ должен возвращать объект итератор
+        # Метод __iter__ должен возвращать объект-итератор
         return self
 
     def __next__(self):
