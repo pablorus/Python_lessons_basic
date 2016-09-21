@@ -9,7 +9,7 @@ for el in range(10):
     lst.append(random.randint(-10, 10))
 print('lst = ', lst)
 
-# Тоже самое ,но с помощью генератора списка
+# То же самое, но с помощью генератора списка.
 # Компактнее код и выполняется быстрее
 lst_g = [random.randint(-10, 10) for _ in range(10)]
 print('lst_g = ', lst_g)

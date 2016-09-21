@@ -9,7 +9,7 @@ else:
     name = "Безымянный"
 print(name)
 
-# Или так с помощью тенарного if else
+# Или так - с помощью тернарного if else
 print(d.get("name") if d.get("name") else "Безымянный")
 
 # Синтаксис
