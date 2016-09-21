@@ -1,4 +1,4 @@
-# Наследование подразумевает то, что дочерний класс содержит все атрибуты родительского класса,
+# Наследование подразумевает, что дочерний класс содержит все атрибуты родительского класса,
 # при этом некоторые из них могут быть переопределены или добавлены в дочернем.
 
 
@@ -51,7 +51,7 @@ class Teacher:
 # Но часть информации у них общая(атрибуты, методы)
 
 
-# Общую информацию выносим в Класс предок(родитель)
+# Общую информацию выносим в Класс-предок (родитель)
 class People:
     def __init__(self, name, surname, birth_date, school):
         self.name = name
@@ -75,7 +75,7 @@ class Student(People):
         self._class_room = {'class_num': int(class_room.split()[0]),
                             'class_char': class_room.split()[1]}
 
-    # И уникальные сметоды
+    # И уникальные методы
     @property
     def class_room(self):
         return "{} {}".format(self._class_room['class_num'], self._class_room['class_char'])
