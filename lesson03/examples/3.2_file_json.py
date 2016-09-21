@@ -9,7 +9,7 @@ with open(os.path.join(DIR, 'save_json_data.json'), 'w', encoding='UTF-8', ) as 
     json.dump(python_data, f, ensure_ascii=False)
     # ensure_ascii=False - чтобы некирилические символы не были преобразованы к unicode-последовательности
 
-# Читаем JSON их файла и преобразуем к типу Python
+# Читаем JSON из файла и преобразуем к типу Python
 with open(os.path.join(DIR, 'save_json_data.json'), 'r', encoding='UTF-8') as f:
     read_data = json.load(f)
 

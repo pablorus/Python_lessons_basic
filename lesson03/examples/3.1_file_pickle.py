@@ -15,4 +15,4 @@ with open(os.path.join(DIR, 'save_pickle_data'), 'rb') as f:
 print(read_data)
 print(read_data[0])
 
-# При помощи модуля pickle можно сохранять любые python объекты
+# При помощи модуля pickle можно сохранять любые python-объекты
