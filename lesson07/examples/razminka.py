@@ -32,25 +32,6 @@
 # print(x)
 # func()
 
-class Bibika:
-    def __init__(self, wheels, shassi, engine):
-        self.shassi = shassi
-        self.wheels = wheels
-        self.engine = engine
-        self._is_moving = False
-        
-    def drive(self):
-        self._is_moving = True
-        print('Еду далеко. Мотор работает: {}'.format(self.engine))
-        
-    def stop(self):
-        self._is_moving = False
-    
-    def repair_engine(self, engine):
-        if not self._is_moving:
-            print('Замена двигателя')
-        else:
-            print('Остановитесь для замены двигателя')
         
 
 
